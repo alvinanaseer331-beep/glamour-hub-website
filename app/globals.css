@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/* Theme: #A81C07 (red) & #B06500 (amber) */
+:root {
+  --accent-red: #a81c07;
+  --accent-amber: #b06500;
+  --accent-amber-light: #e8c98a;
+  --accent-amber-pale: #faf3e8;
+  --accent-red-dark: #1f0806;
+  --background: #faf3e8;
+  --foreground: #a81c07;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent-red: var(--accent-red);
+  --color-accent-amber: var(--accent-amber);
+  --color-accent-amber-light: var(--accent-amber-light);
+  --color-accent-amber-pale: var(--accent-amber-pale);
+  --color-accent-red-dark: var(--accent-red-dark);
+  --footer-bg: var(--accent-red-dark);
+  --footer-text: var(--accent-amber-light);
+  --footer-hover: var(--accent-amber-pale);
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-text: var(--footer-text);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --background: #1f0806;
+    --foreground: #f0d4a0;
+  }
+}
+
+html.dark {
+  --background: #1f0806;
+  --foreground: #f0d4a0;
+}
+
+html.light {
+  --background: #faf3e8;
+  --foreground: #a81c07;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cursor-blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-hero-fade-in {
+  animation: hero-fade-in 1s ease-out both;
+}
+
+.animate-cursor-blink {
+  animation: cursor-blink 1s step-end infinite;
+}
