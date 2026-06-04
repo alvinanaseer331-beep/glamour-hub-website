@@ -1,38 +1,36 @@
-# Product images
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-**Hero carousel** (home page): uses `image16.jfif`, `image17.jfif`, and `image18.jfif`. Update paths in `app/components/Hero.tsx` if you use different filenames.
+## Getting Started
 
-**Lip section** (home page):
-- `image1.jfif`, `image2.jfif`, `image3.jfif` — edit paths in `app/components/LipProductGrid.tsx`
+First, run the development server:
 
-**Lip page** (`/lips`):
-- `image19.jfif`–`image26.jfif` — edit in `app/lips/page.tsx`
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-**Eye section** (home page):
-- `image4.jfif`, `image5.jfif`, `image6.jfif` — edit paths in `app/components/EyeProductGrid.tsx`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-**Eye page** (`/eye`):
-- `image35.jfif`–`image42.jfif` — edit in `app/eye/page.tsx`
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-**Nails section** (home page):
-- `image7.jfif`, `image8.jfif`, `image9.jfif` — edit paths in `app/components/NailsProductGrid.tsx`
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-**Nails page** (`/nails`):
-- `image43.jfif`–`image50.jfif` — edit in `app/nails/page.tsx`
+## Learn More
 
-**Makeup remover section** (home page):
-- `image10.jfif`, `image11.jfif`, `image12.jfif` — edit paths in `app/components/MakeupRemoverProductGrid.tsx`
+To learn more about Next.js, take a look at the following resources:
 
-**Makeup remover page** (`/makeup-remover`):
-- `image51.jfif`–`image54.jfif` — edit in `app/makeup-remover/page.tsx`
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-**Cheeks section** (home page):
-- `image13.jfif`, `image14.jfif`, `image15.jfif` — edit paths in `app/components/CheeksProductGrid.tsx`
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-**Cheeks page** (`/cheeks`):
-- `image27.jfif`–`image34.jfif` — edit in `app/cheeks/page.tsx`
+## Deploy on Vercel
 
-**Contact page** (`/contact-us`) hero:
-- `image55.jfif` — hero product image; edit in `app/contact-us/page.tsx`
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-If you use different filenames or extensions, update the paths in the corresponding component.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
